@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Musaul Karim">
+
+<title>Tier One Consulting</title>
+
 <style>
 
 html, body
@@ -9,24 +15,73 @@ html, body
   color: #afafaf;
 }
 
-div
-{
-  right: 50%;
-  bottom: 50%;
-  transform: translate(50%,50%);
-  position: absolute;
-}
-
 h1
 {
-	font: 80px Century Gothic;
+	font-family: Garamond;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.branding {
+  position: fixed;
+  bottom: 5%;
+  right: 7%;
+  padding: 2%;
+  font-size: 3rem;
+  text-align: right;
+  max-width: calc(50vw - 10px); /* Ensures it doesn't extend beyond the center */
+}
+
+@media (max-width: 2500px) {
+  .branding {
+    font-size: 2.5rem;
+    bottom: 8%;
+    right: 8%;
+    padding: 1.5%;
+  }
+}
+
+@media (max-width: 2000px) {
+    .branding {
+      font-size: 2rem;
+      bottom: 8%;
+      right: 8%;
+      padding: 1.5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .branding {
+        font-size: 1.5rem;
+        bottom: 6%;
+        right: 6%;
+        padding: 1%;
+    }
+}
+
+@media (max-width: 600px) {
+    .branding {
+        font-size: 1rem;
+        bottom: 4%;
+        right: 4%;
+        padding: 0.5%;
+    }
 }
 
 </style>
 </head>
+
 <body>
-<div>
+<div class="branding">
 <h1>Tier One Consulting Ltd</h1>
 </div>
 </body>
+
 </html>
